@@ -9,18 +9,31 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@radix-ui/react-separator": "^1.0.3",
+    "@radix-ui/react-tooltip": "^1.0.7",
+    "clsx": "^2.1.1",
+    "next": "14.2.3",
+    "next-nprogress-bar": "^2.3.12",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.3"
+    "tailwind-merge": "^2.3.0"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@stylistic/eslint-plugin": "^2.1.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
     "eslint": "^8",
-    "eslint-config-next": "14.2.3"
+    "eslint-config-next": "14.2.3",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-tailwindcss": "^3.15.2",
+    "lint-staged": "^15.2.2",
+    "postcss": "^8",
+    "simple-git-hooks": "^2.11.1",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
   }
 }
