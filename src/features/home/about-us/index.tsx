@@ -6,9 +6,9 @@ export function AboutUs() {
       <div className="flex justify-between space-x-8">
         <div className="min-h-40 min-w-40 rounded-full bg-accent" />
 
-        <div>
-          <h2>Servimos plataformas web pelo mundo inteiro</h2>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores culpa, fuga et repellendus debitis ut doloremque a ab blanditiis labore quos iure velit impedit quis saepe molestiae ipsum mollitia aperiam?</p>
+        <div className="space-y-4">
+          <h2 className="text-2xl font-medium text-primary-label-primary">About us</h2>
+          <p className="text-primary-label-secondary">We are a passionate web design and branding company. We take the time to understand your vision and craft a website and brand identity that speaks volumes about your business. We are excited to help you build a brand and website that gets you noticed. Let&apos;s chat about your project today!</p>
         </div>
       </div>
     </SectionWrapper>
