@@ -1,8 +1,11 @@
-import { PropsWithChildren } from 'react'
+import { cn } from '@/utils/cn'
+import { HTMLAttributes, PropsWithChildren } from 'react'
 
-export function SectionWrapper({ children }: PropsWithChildren) {
+type TSeectionWrapper = PropsWithChildren & HTMLAttributes<HTMLBaseElement>
+
+export function SectionWrapper({ children, className, ...props }: TSeectionWrapper) {
   return (
-    <section className="m-auto max-w-screen-md">
+    <section className={cn('m-auto max-w-screen-md', className)} {...props}>
       { children }
     </section>
   )

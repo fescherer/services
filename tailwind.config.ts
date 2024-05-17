@@ -17,11 +17,11 @@ const config: Config = {
       },
       secondary: {
         // Background 2 color
-        DEFAULT: '#B7681F',
+        DEFAULT: '#25A8A880',
         border: '#ffffff55',
         label: {
-          primary: '#1D1F24',
-          secondary: '#1D1F24',
+          primary: '#050315',
+          secondary: '#050315',
           active: '#1D1F24',
         },
       },

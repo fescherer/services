@@ -16,7 +16,7 @@ export function Home() {
         <Traits />
       </div>
 
-      <div className="my-40 space-y-40">
+      <div className="mb-40 mt-80 space-y-40">
         <AboutUs />
         <CoreValues />
         <OurServices />

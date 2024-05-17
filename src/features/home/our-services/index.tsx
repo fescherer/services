@@ -1,5 +1,7 @@
 import { SectionWrapper } from '@/components/section-wrapper'
 
+// cada service vai ter uma borda de uma cor
+
 export function OurServices() {
   return (
     <SectionWrapper>
