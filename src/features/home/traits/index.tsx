@@ -19,16 +19,16 @@ const traits = [
 ]
 export function Traits() {
   return (
-    <SectionWrapper>
-      <div className="absolute -bottom-20 left-1/2 flex w-full max-w-screen-md -translate-x-1/2 justify-between">
+    <SectionWrapper className="py-0">
+      <div className="absolute -bottom-20 left-1/2 z-50 flex w-full max-w-screen-md -translate-x-1/2 justify-between">
         {
-        traits.map(trait => (
-          <div key={trait.id} className="flex flex-col items-center gap-4 rounded bg-secondary px-5 py-20 font-medium text-secondary-label-primary shadow-md">
-            <span className="mui-icon-filled text-4xl">{trait.icon}</span>
-            <span>{trait.text}</span>
-          </div>
-        ))
-      }
+          traits.map(trait => (
+            <div key={trait.id} className="flex flex-col items-center gap-4 rounded bg-secondary px-5 py-20 font-medium text-secondary-label-primary shadow-md">
+              <span className="mui-icon-filled text-4xl">{trait.icon}</span>
+              <span>{trait.text}</span>
+            </div>
+          ))
+        }
       </div>
     </SectionWrapper>
   )

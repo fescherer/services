@@ -26,3 +26,65 @@ button:focus-visible,
 a:focus-visible {
   @apply ring-2 ring-accent border-transparent outline-none rounded-sm
 }
+
+.custom-shape-divider-top-1716422643 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1716422643 svg {
+  position: relative;
+  display: block;
+  width: calc(112% + 1.3px);
+  height: 140px;
+}
+
+.custom-shape-divider-top-1716422643 .shape-fill {
+  fill: #FFFFFF;
+}
+
+.custom-shape-divider-bottom-1716425581 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1716425581 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 242px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1716425581 .shape-fill {
+  fill: #FFFFFF;
+}
+
+.custom-shape-divider-top-1716426420 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1716426420 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 242px;
+}
+
+.custom-shape-divider-top-1716426420 .shape-fill {
+  fill: #FFFFFF;
+}

@@ -17,7 +17,7 @@ const config: Config = {
       },
       secondary: {
         // Background 2 color
-        DEFAULT: '#25A8A880',
+        DEFAULT: '#25A8A8',
         border: '#ffffff55',
         label: {
           primary: '#050315',

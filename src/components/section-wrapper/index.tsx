@@ -9,9 +9,9 @@ interface ISectionWrapper extends TSectionWrapper {
 
 export function SectionWrapper({ children, className, title, ...props }: ISectionWrapper) {
   return (
-    <section className={cn('m-auto max-w-screen-md', className)} {...props}>
+    <section className={cn('m-auto max-w-screen-md py-40', className)} {...props}>
       {!!title && <h2 className="text-2xl font-medium text-primary-label-primary">{title}</h2>}
-      { children }
+      {children}
     </section>
   )
 }
