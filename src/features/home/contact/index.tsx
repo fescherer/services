@@ -2,9 +2,7 @@ import { SectionWrapper } from '@/components/section-wrapper'
 
 export function Contact() {
   return (
-    <SectionWrapper>
-      <h2>Get in contact</h2>
-
+    <SectionWrapper title="Get in contact">
       <div>
         <span>form com email e tals</span>
         <span>SCHEDULE A GOOGLE MEET CALL</span>

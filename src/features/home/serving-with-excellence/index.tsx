@@ -44,9 +44,7 @@ const servingWithExcellence = [
 ]
 export function ServingWithExcellence() {
   return (
-    <SectionWrapper>
-      <h2>Serving with Excellence</h2>
-
+    <SectionWrapper title="Serving with Excellence">
       <div className="flex flex-wrap gap-2">
         {
           servingWithExcellence.map(service => (
