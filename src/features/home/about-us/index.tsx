@@ -1,4 +1,5 @@
 import { SectionWrapper } from '@/components/section-wrapper'
+import Image from 'next/image'
 
 export function AboutUs() {
   return (
@@ -10,8 +11,8 @@ export function AboutUs() {
       </div> */}
 
       <SectionWrapper className="">
-        <div className="flex justify-between space-x-8">
-          <div className="min-h-40 min-w-40 rounded-full bg-accent" />
+        <div className="flex flex-col items-center justify-between space-y-14 md:flex-row md:space-x-14 md:space-y-0">
+          <Image src="/aboutus.webp" width={300} height={561} alt="Computer above a table" />
 
           <div className="space-y-4">
             <h2 className="text-2xl font-medium text-primary-label-primary">About us</h2>
