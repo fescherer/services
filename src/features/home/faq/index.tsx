@@ -1,7 +1,4 @@
-'use client'
-
 import { SectionWrapper } from '@/components/section-wrapper'
-import * as Accordion from '@radix-ui/react-accordion'
 
 const DATA_FAQ = [
   {
@@ -49,29 +46,17 @@ const DATA_FAQ = [
 export function Faq() {
   return (
     <SectionWrapper title="FAQ">
-      <Accordion.Root type="multiple" className="flex flex-col gap-3 rounded">
+      <div className="my-4 space-y-6">
         {
           DATA_FAQ.map(faq => (
-            <Accordion.Item
-              key={faq.id}
-              value={faq.id}
-              className="mt-px overflow-hidden rounded border border-transparent data-[state=open]:border-secondary"
-            >
-              <Accordion.Header className="flex">
-                <Accordion.Trigger className="group flex flex-1 items-center justify-between bg-primary p-2 text-start leading-normal text-secondary-label-primary">
-                  {faq.title}
-                  <span className="mui-icon-filled transition-transform duration-300 ease-[cubic-bezier(0.87,_0,_0.13,_1)] group-data-[state=open]:rotate-180">keyboard_arrow_down</span>
-                </Accordion.Trigger>
-              </Accordion.Header>
-
-              <Accordion.Content className="overflow-hidden bg-primary p-2 text-sm text-primary-label-primary data-[state=closed]:animate-slideUp data-[state=open]:animate-slideDown">
-                {faq.text}
-              </Accordion.Content>
-            </Accordion.Item>
+            <div key={faq.id} className="space-y-2 p-2 shadow-md">
+              <h3 className="text-lg font-medium text-primary-label-primary">{faq.title}</h3>
+              <p className="px-4 text-primary-label-secondary">{faq.text}</p>
+            </div>
           ))
         }
-      </Accordion.Root>
 
+      </div>
     </SectionWrapper>
   )
 }
