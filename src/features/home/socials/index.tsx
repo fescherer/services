@@ -55,7 +55,7 @@ export function Socials() {
       <div className="flex flex-col gap-4">
         {
           DATA_SOCIAL.map(item => (
-            <Link target="_blank" href={item.link} key={item.id} className="group rounded border border-l-accent-label-primary p-2 transition-all hover:border-secondary">
+            <Link target="_blank" href={item.link} key={item.id} className="group rounded border border-l-accent-label-primary p-2 transition-all hover:scale-105 hover:border-secondary">
               <div className="flex justify-between">
                 <div className="flex gap-2 transition-all group-hover:text-secondary">
                   <div className="opacity-85">{item.icon}</div>

@@ -70,7 +70,7 @@ export function OurServices() {
           DATA.map(service => (
             <div key={service.id} className="relative h-[280px] w-[200px] overflow-hidden border-4 bg-secondary bg-cover text-[#ffffff]" style={{ backgroundImage: `url(${service.image})`, borderImage: `linear-gradient(to bottom right, ${service.color1}, ${service.color2}) 1` }}>
               <div className="absolute size-full bg-[#00000088]" />
-              <div className="absolute size-full bg-gradient-to-t from-secondary-label-primary from-[1%] via-transparent to-secondary-label-primary to-90%" />
+              <div className="absolute size-full bg-gradient-to-t from-shadow from-[1%] via-transparent to-shadow to-90%" />
 
               <div className="absolute left-1/2 top-6 -translate-x-1/2 text-center text-2xl font-medium ">
                 <span>{service.name}</span>

@@ -73,7 +73,7 @@ export function Bio() {
     <div className="flex max-w-80 flex-col gap-2">
 
       <LogoIcon />
-      <p className="max-w-prose text-sm text-secondary-label-secondary">{DATA.company_bio}</p>
+      <p className="max-w-prose text-sm ">{DATA.company_bio}</p>
 
       <div className="flex flex-wrap justify-center gap-4">
         <Tooltip tooltip="Subscribe to RSS">

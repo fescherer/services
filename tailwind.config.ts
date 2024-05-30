@@ -20,9 +20,9 @@ const config: Config = {
         DEFAULT: '#25A8A8',
         border: '#ffffff55',
         label: {
-          primary: '#050315',
-          secondary: '#050315',
-          active: '#1D1F24',
+          primary: '#F1F1F1',
+          secondary: '#F1F1F1',
+          active: '#F1F1F1',
         },
       },
       accent: {
@@ -53,6 +53,7 @@ const config: Config = {
         },
       },
       transparent: 'transparent',
+      shadow: '#050315',
     },
     keyframes: {
       slideDown: {

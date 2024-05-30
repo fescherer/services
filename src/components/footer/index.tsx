@@ -6,14 +6,16 @@ import { SiteMap } from './site-map'
 export function Footer() {
   return (
     <footer>
-      <div className="bg-secondary">
+      <Separator layer="secondary" />
+
+      <div className="bg-primary text-primary-label-primary">
         <div className="m-auto flex max-w-6xl flex-col items-center justify-between gap-4 p-4 md:flex-row md:p-16">
           <Bio />
           <SiteMap />
         </div>
       </div>
 
-      <Separator layer="primary" />
+      <Separator layer="secondary" />
       <Copyright />
     </footer>
   )
