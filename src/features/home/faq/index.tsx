@@ -45,9 +45,16 @@ const DATA_FAQ = [
 
 export function Faq() {
   return (
-    <SectionWrapper title="FAQ">
-      <div className="my-4 space-y-6">
-        {
+    <div className="relative min-h-screen pb-16">
+      <div className="custom-shape-divider-bottom-1716425581">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" className="shape-fill" />
+        </svg>
+      </div>
+
+      <SectionWrapper title="FAQ">
+        <div className="my-4 space-y-6">
+          {
           DATA_FAQ.map(faq => (
             <div key={faq.id} className="space-y-2 p-2 shadow-md">
               <h3 className="text-lg font-medium text-primary-label-primary">{faq.title}</h3>
@@ -56,7 +63,8 @@ export function Faq() {
           ))
         }
 
-      </div>
-    </SectionWrapper>
+        </div>
+      </SectionWrapper>
+    </div>
   )
 }

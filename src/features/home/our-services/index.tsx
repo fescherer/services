@@ -64,11 +64,11 @@ const DATA = [
 
 export function OurServices() {
   return (
-    <SectionWrapper title="Our Services" wrapperClassName="bg-[#fAfAfA]">
+    <SectionWrapper title="Our Services" wrapperClassName="bg-primary">
       <div className="flex flex-wrap justify-around gap-6 pt-6">
         {
           DATA.map(service => (
-            <div key={service.id} className="relative h-[280px] w-[200px] overflow-hidden border-4 bg-secondary bg-cover text-[#ffffff]" style={{ backgroundImage: `url(${service.image})`, borderImage: `linear-gradient(to bottom right, ${service.color1}, ${service.color2}) 1` }}>
+            <div key={service.id} className="relative h-[280px] w-[200px] overflow-hidden border-4 bg-cover text-secondary" style={{ backgroundImage: `url(${service.image})`, borderImage: `linear-gradient(to bottom right, ${service.color1}, ${service.color2}) 1` }}>
               <div className="absolute size-full bg-[#00000088]" />
               <div className="absolute size-full bg-gradient-to-t from-shadow from-[1%] via-transparent to-shadow to-90%" />
 

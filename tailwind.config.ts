@@ -8,7 +8,7 @@ const config: Config = {
       primary: {
         // Background 1 color
         DEFAULT: '#F1F1F1',
-        border: '#ffffff55',
+        border: '#000000',
         label: {
           primary: '#313235',
           secondary: '#313235',
@@ -17,21 +17,21 @@ const config: Config = {
       },
       secondary: {
         // Background 2 color
-        DEFAULT: '#25A8A8',
-        border: '#ffffff55',
+        DEFAULT: '#ffffff',
+        border: '#00000022',
         label: {
-          primary: '#F1F1F1',
-          secondary: '#F1F1F1',
-          active: '#F1F1F1',
+          primary: '#313235',
+          secondary: '#313235',
+          active: '#000000',
         },
       },
       accent: {
         // Brand color
-        DEFAULT: '#008585',
-        active: '#008585',
+        DEFAULT: '#25A8A8',
+        active: '#25A8A8',
         label: {
-          primary: '#0f0f0f',
-          active: '#ff0000',
+          primary: '#F1F1F1',
+          active: '#FFFFFF',
         },
       },
       feedback: {
@@ -64,10 +64,57 @@ const config: Config = {
         from: { height: 'var(--radix-accordion-content-height)' },
         to: { height: '0px' },
       },
+      twinkleKeyFrame: {
+        '25%': { opacity: '0' },
+      },
+      cometKeyframe: {
+        '0%, 40%': {
+          transform: 'translateX(0)',
+          opacity: '0',
+        },
+        '50%': {
+          opacity: '1',
+        },
+        '60%, 100%': {
+          transform: 'translateX(-100vmax)',
+          opacity: '0',
+        },
+      },
+      slideUpAndFade: {
+        from: { opacity: '0', transform: 'translateY(2px)' },
+        to: { opacity: '1', transform: 'translateY(0)' },
+      },
+      slideRightAndFade: {
+        from: { opacity: '0', transform: 'translateX(-2px)' },
+        to: { opacity: '1', transform: 'translateX(0)' },
+      },
+      slideDownAndFade: {
+        from: { opacity: '0', transform: 'translateY(-2px)' },
+        to: { opacity: '1', transform: 'translateY(0)' },
+      },
+      slideLeftAndFade: {
+        from: { opacity: '0', transform: 'translateX(2px)' },
+        to: { opacity: '1', transform: 'translateX(0)' },
+      },
+      spinPlanetKey: {
+        '0%': {
+          transform: 'translate(-50%, -50%) rotate(0deg)',
+        },
+        '100%': {
+          transform: 'translate(-50%, -50%) rotate(360deg)',
+        },
+      },
     },
     animation: {
       slideDown: 'slideDown 300ms cubic-bezier(0.87, 0, 0.13, 1)',
       slideUp: 'slideUp 300ms cubic-bezier(0.87, 0, 0.13, 1)',
+      comet: 'cometKeyframe 10s linear infinite',
+      star: 'twinkleKeyFrame 4s ease-in-out infinite',
+      slideUpAndFade: 'slideUpAndFade 400ms cubic-bezier(0.16, 1, 0.3, 1)',
+      slideRightAndFade: 'slideRightAndFade 400ms cubic-bezier(0.16, 1, 0.3, 1)',
+      slideDownAndFade: 'slideDownAndFade 400ms cubic-bezier(0.16, 1, 0.3, 1)',
+      slideLeftAndFade: 'slideLeftAndFade 400ms cubic-bezier(0.16, 1, 0.3, 1)',
+      spinPlanet: 'spinPlanetKey linear infinite',
     },
   },
   plugins: [

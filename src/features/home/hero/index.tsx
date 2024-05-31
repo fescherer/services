@@ -7,12 +7,12 @@ export function Hero() {
         <div className="text-4xl">
           <h2 className="mb-4 text-7xl font-bold">
             Build whatever you
-            <strong className="text-secondary"> want</strong>
+            <strong className="text-accent"> want</strong>
           </h2>
 
           <h3>Felipe Scherer Dev</h3>
           <h3>Fennec Tales Studio</h3>
-          <h3 className="my-5 text-3xl font-medium text-secondary">Software house</h3>
+          <h3 className="my-5 text-3xl font-medium text-accent">Software house</h3>
         </div>
 
       </SectionWrapper>

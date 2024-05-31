@@ -44,11 +44,12 @@ const servingWithExcellence = [
 ]
 export function ServingWithExcellence() {
   return (
-    <SectionWrapper title="Serving with Excellence">
-      <div className="flex flex-wrap justify-around gap-6 pt-6">
-        {
+    <div className="bg-secondary">
+      <SectionWrapper title="Serving with Excellence">
+        <div className="flex flex-wrap justify-around gap-6 pt-6">
+          {
           servingWithExcellence.map(service => (
-            <div key={service.id} className="relative h-[240px] w-[200px] overflow-hidden rounded bg-secondary text-[#ffffff]">
+            <div key={service.id} className="relative h-[240px] w-[200px] overflow-hidden rounded bg-accent text-accent-label-primary">
               <div className="absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 flex-col gap-3 text-center font-medium">
                 <span className="mui-icon-filled text-4xl opacity-70">{service.icon}</span>
                 <span>{service.text}</span>
@@ -56,7 +57,8 @@ export function ServingWithExcellence() {
             </div>
           ))
         }
-      </div>
-    </SectionWrapper>
+        </div>
+      </SectionWrapper>
+    </div>
   )
 }

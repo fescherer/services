@@ -5,10 +5,8 @@ import { SiteMap } from './site-map'
 
 export function Footer() {
   return (
-    <footer>
-      <Separator layer="secondary" />
-
-      <div className="bg-primary text-primary-label-primary">
+    <footer className="bg-secondary">
+      <div className=" text-secondary-label-primary">
         <div className="m-auto flex max-w-6xl flex-col items-center justify-between gap-4 p-4 md:flex-row md:p-16">
           <Bio />
           <SiteMap />

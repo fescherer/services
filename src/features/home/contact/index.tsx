@@ -34,11 +34,12 @@ export function Contact() {
   }
 
   return (
-    <SectionWrapper title="Get in contact">
-      <p className="py-2">To get in touch with us, you can use one of these channels: </p>
+    <div className="bg-secondary">
+      <SectionWrapper title="Get in contact">
+        <p className="py-2">To get in touch with us, you can use one of these channels: </p>
 
-      <div className="my-4 flex justify-between gap-6">
-        {
+        <div className="my-4 flex justify-between gap-6">
+          {
           DATA_CONTATACT.map(contact => (
             <Link href={contact.link} target="_blank" key={contact.id} className="relative flex min-h-40 w-full items-center justify-center p-4 shadow-md transition-all hover:scale-110">
               <div className="flex flex-col items-center gap-2">
@@ -52,12 +53,13 @@ export function Contact() {
                   contact.text && <button onClick={event => copyContent(event, contact.text)} type="button" className="mui-icon-filled">content_copy</button>
                 }
 
-                <span className="mui-icon-filled transition-all group-hover:text-secondary">open_in_new</span>
+                <span className="mui-icon-filled transition-all group-hover:text-accent">open_in_new</span>
               </div>
             </Link>
           ))
         }
-      </div>
-    </SectionWrapper>
+        </div>
+      </SectionWrapper>
+    </div>
   )
 }
